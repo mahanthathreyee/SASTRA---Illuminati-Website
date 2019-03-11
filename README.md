@@ -1,4 +1,4 @@
-# SASTRA---Illuminati-Website
+# SASTRA-Illuminati-Website
 The web design of SASTRA's Illuminati club
 
 ## Introduction
