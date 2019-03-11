@@ -2,8 +2,7 @@ function loadApp() {
 
     $('#canvas').fadeIn(1000);
 
-    var flipbook = $('.magazine');
-
+    var flipbook = $('.magazine');  
     // Check if the CSS was already loaded
 
     if (flipbook.width() == 0 || flipbook.height() == 0) {
@@ -86,7 +85,6 @@ function loadApp() {
                 if (page == 1) {
                     $(this).turn('peel', 'br');
                 }
-
             },
 
             missing: function(event, pages) {

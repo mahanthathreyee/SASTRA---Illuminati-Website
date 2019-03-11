@@ -1,0 +1,33 @@
+.footer_links{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    margin: 3px;
+    padding: 3px;
+    font-size: 16px;
+    z-index: 0; 
+    padding-left: 10px;
+}
+
+.footer_links:hover{
+    color: black;
+}
+
+.footer_links::before{
+    content: '';
+    width: 0%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: white;
+    height: 100%;
+    transition: width 0.2s ease-out;
+    z-index: -1;
+    padding-left: 1px;
+}
+
+.footer_links:hover::before{
+    width: 100%;
+    transition: width 0.2s ease-out;
+}

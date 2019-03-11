@@ -279,7 +279,6 @@ function resizeViewport() {
 	
 }
 
-
 // Number of views in a flipbook
 
 function numberOfViews(book) {

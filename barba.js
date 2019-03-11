@@ -1,5 +1,7 @@
+var preloaderImage = new Image();
 $(document).ready(() => {
   Barba.Pjax.start();
+  preloaderImage.src = 'preloader.gif';
 });
 
 
@@ -11,7 +13,7 @@ var FadeTransition = Barba.BaseTransition.extend({
     $('.preloader').fadeIn('slow').css({
       'display': 'flex'
     });
-    $('.preloader > img').attr('src', 'preloader.gif');
+    $('.preloader').prepend(preloaderImage);
   },
 
   fadeOut: function() {
@@ -48,7 +50,7 @@ Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, co
     });
     $('link[href="index.css"]').remove();
   } else {
-    $('head').append('<link rel="stylesheet" type="text/css" href="index.css">');
+    $('head').prepend('<link rel="stylesheet" type="text/css" href="index.css">');
   }
 });
 
@@ -57,12 +59,17 @@ Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, co
   $('.preloader').fadeIn('slow').css({
     'display': 'flex'
   });
-  if ($('.preloader > img').attr('src') == '')
-    $('.preloader > img').attr('src', 'preloader.gif');
+  if ($('.preloader > img').length == 0)
+    $('.preloader').prepend(preloaderImage);
   var lenImages = $('img').length;
   var tmpImgCount = 0;
   $('img').each(function() {
     var tmpImg = new Image();
+    console.log($(this).attr('src'));
+    if($(this).attr('src') == undefined){
+      lenImages --;
+      return true;
+    }
     tmpImg.src = $(this).attr('src');
     tmpImg.onload = () => {
       ++tmpImgCount;
@@ -75,7 +82,7 @@ Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, co
           'width': '0'
         });
         $('.preloader').fadeOut('slow');
-        $('.preloader > img').attr('src', '');
+        $('.preloader > img').remove()
         $('.barba-container').show();
       }
     };
