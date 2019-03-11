@@ -2,9 +2,10 @@ var lastpos = 0;
 document.addEventListener('scroll', () => {   
     let scroll_pos = $(this).scrollTop();
     if(scroll_pos - lastpos >=0
-        && scroll_pos/$('.starting-section').height() * 100 > 0){
+        && scroll_pos/$('.starting-section').height() * 100 > 0
+        && scroll_pos <= $('.container').offset().top){
             window.scrollTo(0, $('.container').offset().top+1);   
-            if($(this).scrollTop() >= $('.container').offset().top){
+            if($(this).scrollTop() == $('.container').offset().top){
                 anime({
                     targets: '.sticky-header',
                     height: '100px',
@@ -31,6 +32,10 @@ document.addEventListener('scroll', () => {
     lastpos = scroll_pos;
 });
 
-function scroll_down_page1(){
+function scroll_down_page(){
     window.scrollTo(0, $('.container').offset().top);
+}
+
+function scroll_up_page(){
+    window.scrollTo(0, 0);
 }
