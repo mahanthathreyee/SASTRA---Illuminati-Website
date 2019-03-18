@@ -21,3 +21,5 @@ Illuminati is the e-magazine club SASTRA Deemed University. This is the website 
     * Hash.js
   * Anime.js ([animejs.com](animejs.com))
   * Modernizr 2.5.3 ([modernizr.com](modernizr.com))
+
+Icons by [Icons8](https://icons8.com)
