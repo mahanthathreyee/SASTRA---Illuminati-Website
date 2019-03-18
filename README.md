@@ -1,6 +1,10 @@
 # SASTRA-Illuminati-Website
 The web design of SASTRA's Illuminati club
 
+[Illuminati Website](https://www.sastra.edu/illuminati) (not yet updated with redesign)
+
+[SASTRA Deemed University](https://www.sastra.edu)
+
 ## Introduction
 
 Illuminati is the e-magazine club SASTRA Deemed University. This is the website redesign to improve compability across the modern browsers and mobile devices.
