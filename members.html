@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Illuminati</title>
+        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="members.css">
+        
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:200');
+        </style> 
+        
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script
+            src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
+        <script src="anime.js"></script>
+        <script src="barba.min.js"></script>
+        <script src="barba.js"></script>
+        <script src="index.js"></script>
+        <script src="scroll.js"></script>
+
+	    <style>
+            html, body{
+                margin: 0;
+                padding: 0;
+                scroll-behavior: smooth;
+            }
+            html {
+                overflow-y: scroll;
+                scrollbar-width: none; /* Firefox */
+                -ms-overflow-style: none;  /* IE 10+ */
+            }
+            html::-webkit-scrollbar { /* WebKit */
+                width: 0;
+                height: 0;
+            }
+    
+            body{
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="barba-wrapper">
+            <div class="preloader">
+                <style>
+                    .preloader{
+                        width: 100vw;
+                        height: 100vh;
+                        background-color: #000000;
+                        display: none;
+                        justify-content: center;
+                        align-items: center;
+                        z-index: 4;
+                        flex-direction: column;
+                    }
+
+                    .preloader > span{
+                        width: 0;
+                        height: 1px;
+                        display: flex;    
+                        align-self: flex-start;
+                        background-color: white;
+                    }    
+                </style>
+                <span></span>
+            </div>
+            <div class="barba-container" data-location="members">
+                <div onclick="scroll_up_page()" class="sticky-header">
+                    <img src="logo.png">
+                </div>
+                <div class="container">
+                    </section>
+                    <section class="team main">
+                        <h3 class="section_header">Founder and Co-ordinator</h3>
+                        <div class="members_div">
+                           <div class="person_div">
+                                <div class="person">
+                                    <img src="male.png">
+                                </div>
+                                <div class="person_title">
+                                    <p>M. Hari Prasadh </p>
+                                    <p>Founder</p>
+                                    <p>Alumni</p>
+                                </div>
+                            </div>
+                            <div class="person_div">
+                                <div class="person">
+                                    <img src="male.png">
+                                </div>
+                                <div class="person_title">
+                                    <p>Sridhar.S.G</p>
+                                    <p>Web Designer</p>
+                                    <p>Alumni</p>
+                                </div>
+                            </div>
+                            <div class="person_div">
+                                <div class="person">
+                                    <img src="male.png">
+                                </div>
+                                <div class="person_title">
+                                    <p>Maganth Seetharaman</p>
+                                    <p>Co-ordinator &main Web Designer</p>
+                                    <p>B.Tech ICT</p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="section_breaker"></span>
+                    </section>
+                    <section class="team cybertech">
+                        <h3 class="section_header">Cybertech</h3>
+                        <div class="members_div">
+                            <div class="person_div">
+                                <div class="person">
+                                    <img src="female.png">
+                                </div>
+                                <div class="person_title">
+                                    <p>Divyashree N.</p>
+                                    <p>Chief Editor</p>
+                                    <p>B.Tech CSE</p>
+                                </div>
+                            </div>
+                            <div class="person_div">
+                                <div class="person">
+                                    <img src="male.png">
+                                </div>
+                                <div class="person_title">
+                                    <p>Sharath Sriram</p>
+                                    <p>Writer</p>
+                                    <p>B.Tech CSE</p>
+                                </div>
+                            </div>
+                            <div class="person_div">
+                                <div class="person">
+                                    <img src="female.png">
+                                </div>
+                                <div class="person_title">
+                                    <p>Soundhariyaa M.</p>
+                                    <p>Writer</p>
+                                    <p>B.Tech CSE</p>
+                                </div>
+                            </div>
+                            <div class="person_div">
+                                <div class="person">
+                                    <img src="male.png">
+                                </div>
+                                <div class="person_title">
+                                    <p>Anirudhan K.</p>
+                                    <p>Writer</p>
+                                    <p>B.Tech CSE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="section_breaker"></span>
+                    </section>
+                    <section class="team magnatech">
+                        <h3 class="section_header">Magnatech</h3>
+                        <div class="members_div">
+                           <div class="person_div">
+                                <div class="person">
+                                    <img src="male.png">
+                                </div>
+                                <div class="person_title">
+                                    <p>Pranav Iyengar</p>
+                                    <p>Chief Editor</p>
+                                    <p>B.Tech ECE</p>
+                                </div>
+                            </div>
+                            <div class="person_div">
+                                <div class="person">
+                                    <img src="male.png">
+                                </div>
+                                <div class="person_title">
+                                    <p>M. S. Sriram</p>
+                                    <p>Writer</p>
+                                    <p>B.Tech ECE</p>
+                                </div>
+                            </div>
+                            <div class="person_div">
+                                <div class="person">
+                                    <img src="female.png">
+                                </div>
+                                <div class="person_title">
+                                    <p>Karunya</p>
+                                    <p>Writer</p>
+                                    <p>B.Tech EEE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="section_breaker"></span>
+                    </section>
+                    <section class="team niyantra">
+                        <h3 class="section_header">Niyantra</h3>
+                        <div class="members_div">
+                           <div class="person_div">
+                                <div class="person">
+                                    <img src="male.png">
+                                </div>
+                                <div class="person_title">
+                                    <p>Rishab</p>
+                                    <p>Chief Editor</p>
+                                    <p>B.Tech Mechanical</p>
+                                </div>
+                            </div>
+                            <div class="person_div">
+                                <div class="person">
+                                    <img src="male.png">
+                                </div>
+                                <div class="person_title">
+                                    <p>Vignesh</p>
+                                    <p>Writer</p>
+                                    <p>B.Tech Mechanical</p>
+                                </div>
+                            </div>
+                            <div class="person_div">
+                                <div class="person">
+                                    <img src="male.png">
+                                </div>
+                                <div class="person_title">
+                                    <p>Adhitya</p>
+                                    <p>Writer</p>
+                                    <p>B.Tech Mechanical</p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="section_breaker"></span>
+                    </section>
+                    <section class="team structura">
+                        <h3 class="section_header">Structura</h3>
+                        <div class="members_div">
+                           <div class="person_div">
+                                <div class="person">
+                                    <img src="female.png">
+                                </div>
+                                <div class="person_title">
+                                    <p>Anakshi Saha</p>
+                                    <p>Chief Editor</p>
+                                    <p>B.Tech Civil</p>
+                                </div>
+                            </div>
+                            <div class="person_div">
+                                <div class="person">
+                                    <img src="female.png">
+                                </div>
+                                <div class="person_title">
+                                    <p>Sushmitha Shaairly S.</p>
+                                    <p>Writer</p>
+                                    <p>B.Tech Civil</p>
+                                </div>
+                            </div>
+                            <div class="person_div">
+                                <div class="person">
+                                    <img src="male.png">
+                                </div>
+                                <div class="person_title">
+                                    <p>V. Chaitaanya Sree</p>
+                                    <p>Writer</p>
+                                    <p>B.Tech Civil</p>
+                                </div>
+                            </div>
+                            <div class="person_div">
+                                <div class="person">
+                                    <img src="male.png">
+                                </div>
+                                <div class="person_title">
+                                    <p>Moka Eswar</p>
+                                    <p>Writer</p>
+                                    <p>B.Tech Civil</p>
+                                </div>
+                            </div>
+                            <div class="person_div">
+                                <div class="person">
+                                    <img src="male.png">
+                                </div>
+                                <div class="person_title">
+                                    <p>Mohammed Waseem Raza</p>
+                                    <p>Writer</p>
+                                    <p>B.Tech Civil</p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="section_breaker"></span>
+                    </section>
+                    <section class="team design">
+                        <h3 class="section_header">Design</h3>
+                        <div class="members_div">
+                            <div class="person_div">
+                                <div class="person">
+                                    <img src="male.png">
+                                </div>
+                                <div class="person_title">
+                                    <p>Maganth Seetharaman</p>
+                                    <p>Chief Designer</p>
+                                    <p>B.Tech ICT</p>
+                                </div>
+                            </div>
+                            <div class="person_div">
+                                <div class="person">
+                                    <img src="male.png">
+                                </div>
+                                <div class="person_title">
+                                    <p>Yagaa Gowtham</p>
+                                    <p>Designer</p>
+                                    <p>B.Tech IT</p>
+                                </div>
+                            </div>
+                            <div class="person_div">
+                                <div class="person">
+                                    <img src="male.png">
+                                </div>
+                                <div class="person_title">
+                                    <p>Sarath Chandra</p>
+                                    <p>Designer</p>
+                                    <p>B.Tech Mechanical</p>
+                                </div>
+                            </div>
+                            <div class="person_div">
+                                <div class="person">
+                                    <img src="male.png">
+                                </div>
+                                <div class="person_title">
+                                    <p>Naimish</p>
+                                    <p>Designer</p>
+                                    <p>B.Tech Mechanical</p>
+                                </div>
+                            </div>
+                            <div class="person_div">
+                                <div class="person">
+                                    <img src="male.png">
+                                </div>
+                                <div class="person_title">
+                                    <p>Sriram</p>
+                                    <p>Designer</p>
+                                    <p>B.Tech Mechanical</p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="section_breaker"></span>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
