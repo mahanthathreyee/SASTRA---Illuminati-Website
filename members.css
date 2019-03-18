@@ -4,7 +4,7 @@
     max-height: 100px !important;
     position: fixed;
     top: 0;
-    height: 100px;
+    height: 100px !important;
     margin: 0;
     z-index: 2;
     display: flex;
@@ -25,7 +25,7 @@
 
 .section_breaker{
     width: 80%;
-    height: 1px;
+    height: 2px;
     position: absolute;
     bottom: 0;
     left: 10%;
@@ -43,6 +43,7 @@
     margin: 0;
     padding: 10px;
     color: #000000;
+    text-decoration: underline;
 }
 
 .section_header::before{
@@ -59,6 +60,7 @@
 
 .team:hover > .section_header{
     color: #ffffff;
+    text-decoration: none;
     z-index: 1;
     transition: all 0.5s ease;
 }
@@ -74,10 +76,10 @@
 
 .members_div{
     width: 100%;
-    height: 100%;
+    height: 80%;
     display: flex;
-    margin-top: 1.5%;
     justify-content: space-around;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
@@ -97,6 +99,38 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: transparent;
+    transition: background 0.2s ease;
+}
+
+.main:hover > .members_div > .person_div > .person{
+    background: #ffbc42;
+    transition: background 0.2s ease;
+}
+
+.cybertech:hover > .members_div > .person_div > .person{
+    background: #59ffa0;
+    transition: background 0.2s ease;
+}
+
+.magnatech:hover > .members_div > .person_div > .person{
+    background: #e55812;
+    transition: background 0.2s ease;
+}
+
+.niyantra:hover > .members_div > .person_div > .person{
+    background: #1b9aaa;
+    transition: background 0.2s ease;
+}
+
+.structura:hover > .members_div > .person_div > .person{
+    background: #4357ad;
+    transition: background 0.2s ease;
+}
+
+.design:hover > .members_div > .person_div > .person{
+    background: #38aecc;
+    transition: background 0.2s ease;
 }
 
 .person > img{
@@ -110,4 +144,125 @@
 
 .person_title > p:nth-child(3){
     font-size: 12px;
+}
+
+.footer{
+    height: 25vh;
+    width: 100vw;
+    min-height: 300px;
+    display: flex;
+    background: #000000; 
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer_logos{
+    max-height: 100%;
+    width: 25vw;
+    margin-left: 17px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.footer_logos > img{
+    max-height: 100%;
+    width: 100%;
+}
+
+.footer_pages_div{
+    flex: 3;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+
+.footer_members_div{
+    display: flex;
+    flex-direction: column;
+}
+
+.magazine_pages{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_header{
+    margin-bottom: 5px;
+    text-decoration: underline;
+    font-weight: 500;
+    text-align: left;
+}
+
+.copyright_p{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    font-size: 12px;
+}
+
+.height_error{
+    display: none;
+}
+
+@media (max-width: 600px){
+    .container{
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .team{
+        height: auto;
+    }
+
+    .footer{
+        height: auto;
+        position: absolute;
+        margin-top: 100px;
+        flex-direction: column;
+    }
+    .footer_pages_div{
+        flex-direction: column;
+    }
+    .footer_logos{
+        width: 100vw;
+        margin-left: 0;
+    }
+    .person_div{
+        margin: 10px 0;
+    }
+    .footer_header{
+        text-align: center;
+    }
+}
+
+@media (max-height: 450px) {
+    .sticky-header, .container, .footer{
+        display: none !important;
+    }
+    .barba-container{
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        background-color: #000000;
+    }
+    .height_error{
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+    }
+
+    h1{
+        font-family: 'Roboto Slab', serif;
+        font-size: 1.5em;
+    }
 }

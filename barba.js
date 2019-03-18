@@ -59,6 +59,7 @@ Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, co
     } else if (($('.barba-container').attr('data-location') == 'members')){
         $('link[href="index.css"]').remove();
         $('link[href="magazine.css"]').remove();
+        $('head').prepend('<link rel="stylesheet" type="text/css" href="linkHover.css">');
         $('head').prepend('<link rel="stylesheet" type="text/css" href="members.css">');
     }
 });
