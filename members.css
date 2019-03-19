@@ -35,6 +35,7 @@
 .section_header{
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
+    font-size: 2em;
     text-align: center;
     position: relative;
     display: flex;
@@ -58,14 +59,14 @@
     transition: all 0.5s ease;
 }
 
-.team:hover > .section_header{
+.team1 > .section_header{
     color: #ffffff;
     text-decoration: none;
     z-index: 1;
     transition: all 0.5s ease;
 }
 
-.team:hover > .section_header::before{
+.team1 > .section_header::before{
     height: 100%;
     transition: all 0.5s ease;
 }
@@ -103,32 +104,32 @@
     transition: background 0.2s ease;
 }
 
-.main:hover > .members_div > .person_div > .person{
+.main1 > .members_div > .person_div > .person{
     background: #ffbc42;
     transition: background 0.2s ease;
 }
 
-.cybertech:hover > .members_div > .person_div > .person{
+.cybertech1 > .members_div > .person_div > .person{
     background: #59ffa0;
     transition: background 0.2s ease;
 }
 
-.magnatech:hover > .members_div > .person_div > .person{
+.magnatech1 > .members_div > .person_div > .person{
     background: #e55812;
     transition: background 0.2s ease;
 }
 
-.niyantra:hover > .members_div > .person_div > .person{
+.niyantra1 > .members_div > .person_div > .person{
     background: #1b9aaa;
     transition: background 0.2s ease;
 }
 
-.structura:hover > .members_div > .person_div > .person{
+.structura1 > .members_div > .person_div > .person{
     background: #4357ad;
     transition: background 0.2s ease;
 }
 
-.design:hover > .members_div > .person_div > .person{
+.design1 > .members_div > .person_div > .person{
     background: #38aecc;
     transition: background 0.2s ease;
 }

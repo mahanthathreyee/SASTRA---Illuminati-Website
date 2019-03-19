@@ -50,13 +50,27 @@ Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, co
         });
         $('link[href="index.css"]').remove();
         $('link[href="members.css"]').remove();
-    } else if (($('.barba-container').attr('data-location') == 'main')) {
+    } 
+    else if (($('.barba-container').attr('data-location') == 'main')) {
+        $.ajax({
+            url: "index.js",
+            dataType: "script"
+        });
+        $.ajax({
+            url: "scroll.js",
+            dataType: "script"
+        });
         $('link[href="members.css"]').remove();
         $('link[href="magzine.css"]').remove();
         $('head').prepend('<link rel="stylesheet" type="text/css" href="index.css">');
         $('head').prepend('<link rel="stylesheet" type="text/css" href="flicker.css">');
         $('head').prepend('<link rel="stylesheet" type="text/css" href="linkHover.css">');
-    } else if (($('.barba-container').attr('data-location') == 'members')){
+    } 
+    else if (($('.barba-container').attr('data-location') == 'members')){
+        $.ajax({
+            url: "members.js",
+            dataType: "script"
+        });
         $('link[href="index.css"]').remove();
         $('link[href="magazine.css"]').remove();
         $('head').prepend('<link rel="stylesheet" type="text/css" href="linkHover.css">');
@@ -76,7 +90,6 @@ Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, co
     var completeFlag = 0;
     $('img').each(function() {
         var tmpImg = new Image();
-        console.log($(this).attr('src'));
         if ($(this).attr('src') == undefined) {
             lenImages--;
             return true;
@@ -84,7 +97,6 @@ Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, co
         tmpImg.src = $(this).attr('src');
         tmpImg.onload = () => {
             ++tmpImgCount;
-            console.log(lenImages + ' ' + tmpImgCount);
             $('.preloader > span').css({
                 'width': parseInt(tmpImgCount / lenImages * 100) + '%'
             });
