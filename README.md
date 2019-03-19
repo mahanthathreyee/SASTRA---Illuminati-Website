@@ -1,7 +1,7 @@
 # SASTRA-Illuminati-Website
 The web design of SASTRA's Illuminati club
 
-[Illuminati Website](https://www.sastra.edu/illuminati) (not yet updated with redesign)
+[Illuminati Website](https://www.sastra.edu/illuminati) (Site has been updated with v1.1)
 
 [SASTRA Deemed University](https://www.sastra.edu)
 
