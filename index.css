@@ -1,7 +1,6 @@
 html, body{
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
     overflow-x: hidden;
     font-family: 'Roboto Slab', serif;
 }
@@ -35,7 +34,7 @@ a{
     position: fixed;
     top: 0;
     margin: 0;
-    z-index: 1;
+    z-index: 3;
     display: flex;
     align-items: center;
     justify-content: center;
