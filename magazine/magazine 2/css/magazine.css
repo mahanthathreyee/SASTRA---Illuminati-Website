@@ -5,6 +5,22 @@ body{
 	padding:0;
 }
 
+.top-bottons{
+	display: inline-block;
+}
+
+.back_home{
+	position: absolute; 
+	padding: 10px;
+	z-index: 10000;
+	color: black;
+	text-decoration: none;
+}
+
+.back_home:hover{
+	text-decoration: underline;
+}
+
 .magazine-viewport .container{
 	position:absolute;
 	top:50%;
@@ -216,7 +232,6 @@ body{
 }
 
 .thumbnails > div{
-	width:1050px;
 	height:100px;
 	margin:20px auto;
 }

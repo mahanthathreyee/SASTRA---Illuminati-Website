@@ -1,7 +1,7 @@
 var lastpos = 0;
 document.addEventListener('scroll', () => {   
     let scroll_pos = $(this).scrollTop();
-    if(scroll_pos - lastpos >=0
+    if(scroll_pos - lastpos > 0
         && scroll_pos/$('.starting-section').height() * 100 > 0
         && scroll_pos <= $('.container').offset().top){
             window.scrollTo(0, $('.container').offset().top+1);   
@@ -9,7 +9,7 @@ document.addEventListener('scroll', () => {
                 anime({
                     targets: '.sticky-header',
                     height: '100px',
-                    duration: 200,
+                    duration: 50,
                     easing: 'easeOutQuint'
                 });        
                 $('.sticky-header > img').css({height:"100px"});

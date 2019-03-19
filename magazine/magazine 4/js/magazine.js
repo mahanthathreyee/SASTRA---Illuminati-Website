@@ -32,7 +32,7 @@ function loadPage(page, pageElement) {
 		e.preventDefault();
 	});
 
-	img.load(function() {
+	img.on('load', function() {
 		
 		// Set the size
 		$(this).css({width: '100%', height: '100%'});
@@ -168,7 +168,7 @@ function loadLargePage(page, pageElement) {
 	
 	var img = $('<img />');
 
-	img.load(function() {
+	img.on('load',function() {
 
 		var prevImg = pageElement.find('img');
 		$(this).css({width: '100%', height: '100%'});
@@ -278,7 +278,6 @@ function resizeViewport() {
 	$('.magazine').addClass('animated');
 	
 }
-
 
 // Number of views in a flipbook
 
