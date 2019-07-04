@@ -18,8 +18,8 @@ Illuminati is the e-magazine club SASTRA Deemed University. This is the website 
 ## Libraries
 
   * JQuery v3.3.1 ([jquery.com](https://jquery.com))
-  * Barba.js ([barbajs.org](https://barbajs.org))
-  * turn.js ([turnjs.com](https://turnjs.com))
+  * Barba.js ([barbajs.org](https://barba.js.org/v1/))
+  * turn.js ([turnjs.com](http://turnjs.com))
     * turn.js
     * Zoom.js
     * Hash.js
